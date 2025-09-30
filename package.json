@@ -1,0 +1,26 @@
+{
+  "name": "sogeti-academy-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "chrome": "npx playwright test --project=chromium --headed",
+    "firefox": "npx playwright test --project=firefox --headed",
+    "webkit": "npx playwright test --project=webkit --headed",
+    "allBrowsers": "npm run chrome && npm run firefox && npm run webkit",
+    "allFolders": "npm run day14 && npm run day13",
+    "smoke": "npx playwright test --project=chromium --headed --grep @smoke",
+    "regression": "npx playwright test --project=chromium --headed --grep @regression",
+    "allTags": "npx playwright test --project=chromium --headed --grep \"@regression|@smoke\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.1",
+    "@types/node": "^24.6.0",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.1"
+  }
+}
