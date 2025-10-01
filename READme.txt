@@ -195,5 +195,3 @@ npx playwright show-trace trace.zip
 2. Commit je wijzigingen: `git commit -m 'Add nieuwe test'`
 3. Push naar branch: `git push origin feature/nieuwe-test`
 4. Maak een Pull Request
-
-hallo ik ben jeroen
